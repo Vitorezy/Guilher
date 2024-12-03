@@ -81,7 +81,6 @@ h1 {
 .card-character > P {
   position: relative;
   font-size: 2rem;
-  height: 15%;
   background-color: rgba(255, 255, 255, 0.705);
   font-weight: bolder;
   border-radius: 15px 15px 0px 0px;
@@ -95,12 +94,12 @@ h1 {
   transform: translate(-50%, -50%);
   z-index: 999;
   border-radius: 30px;
-  width: 70%;
-  height: 60%;
+  width: 80%;
+  height: 70%;
   background-color: rgba(255, 255, 255, 0.95);
 }
 #expanded-image {
-  width: 30%;
+  width: 35%;
   height: 100%;
   background-color: black;
   background-position: center;
@@ -110,7 +109,7 @@ h1 {
   filter: brightness(110%) saturate(150%);
 }
 #container-info-text {
-  width: 70%;
+  width: 65%;
   height: 100%;
   background-color: pink;
   display: flex;
@@ -141,4 +140,20 @@ position: absolute;
 right: 0%;
 top: 0%;
 backdrop-filter: brightness(20%) grayscale(80%);
+}
+#fechar-info { 
+  transition-duration: .3s;
+  transition-timing-function: ease
+}
+#fechar-info:hover { 
+  scale: 110%;
+}
+@media screen and (max-width: 768px)  {
+  .card-character > P {
+    position: relative;
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0.705);
+    font-weight: bolder;
+    border-radius: 15px 15px 0px 0px;
+  }
 }
