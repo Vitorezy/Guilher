@@ -127,13 +127,14 @@ h1 {
   font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   backdrop-filter: brightness(20%) grayscale(80%);
-  filter: brightness(220%);
+  filter: brightness(300%);
 }
 #container-info-text > p { 
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   backdrop-filter: brightness(20%) grayscale(80%);
   color: white;
+  filter: brightness(220%);
 }
 #container-info-options {
 position: absolute;
@@ -150,10 +151,25 @@ backdrop-filter: brightness(20%) grayscale(80%);
 }
 @media screen and (max-width: 768px)  {
   .card-character > P {
-    position: relative;
     font-size: .8rem;
-    background-color: rgba(255, 255, 255, 0.705);
-    font-weight: bolder;
-    border-radius: 15px 15px 0px 0px;
+  }
+  #container-cards {
+    height: 80%;
+  }
+  .card-character {
+    position: relative;
+    width: 22%;
+    height: 45%;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+  #container-info {
+    width: 95%;
   }
 }
